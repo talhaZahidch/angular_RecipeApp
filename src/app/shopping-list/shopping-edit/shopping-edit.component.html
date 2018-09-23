@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-md-12">
+    <form>
+      <h4>Add New Ingredients </h4>
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="validationDefault01"> Name</label> <input type="text" class="form-control" required id="name" name="name" required #nameInput>
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="validationDefault02">Amount</label>
+          <input type="number" class="form-control" id="amount" placeholder="Amount" value="" required #amountInput required>
+        </div>
+      </div>
+      <button class="btn btn btn-primary mr-1 " type="button" (click)="onAddItem(nameInput.value,amountInput.value)">Add</button>
+      <button class="btn btn-danger  mr-1" type="submit" disabled>Delete</button>
+      <button class="btn btn-info  mr-1" type="submit" disabled>Clear</button>
+    </form>
+  </div>
+</div>
